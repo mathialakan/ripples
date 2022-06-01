@@ -31,9 +31,11 @@
  conan create conan/trng 4.24@user/stable 
  conan create conan/nvidia-cub user/stable
 
- conan install . --build fmt
- conan install . --build spdlog 
+ #conan install . --build fmt
+ #conan install . --build spdlog 
+ conan install . --build -o nvidia_cub=True
 
 #Configure and build
 #--------------------- 
- ./waf configure --enable-cuda build_relese
+ ./waf configure --enable-cuda build_release
+# ./waf build_release
