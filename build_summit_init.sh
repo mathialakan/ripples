@@ -28,10 +28,11 @@
 #--------------------- 
  conan create conan/waf-generator user/stable 
  conda --version 
- conan create conan/trng 4.22@user/stable 
+ conan create conan/trng 4.24@user/stable 
+ conan create conan/nvidia-cub user/stable
+
  conan install . --build fmt
  conan install . --build spdlog 
- conan install . --build nvidia-cub
 
 #Configure and build
 #--------------------- 
